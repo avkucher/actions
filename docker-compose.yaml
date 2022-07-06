@@ -1,0 +1,8 @@
+version: "3.3"
+
+services:
+  web:
+    image: skyprozd26/flask_app
+    ports:
+      - "8000:80"
+    restart: always
