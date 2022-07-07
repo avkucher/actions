@@ -9,7 +9,7 @@ jobs:
       - name: docker build
         run: docker build -t akucher59/flask_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
       - name: docker login
-        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p {{ secrets.DOCKER_TOKEN }}
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_TOKEN }}
       - name: docker push
         run: docker push akucher59/flask_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
   deploy:
