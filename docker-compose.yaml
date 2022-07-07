@@ -4,5 +4,5 @@ services:
   web:
     image: akucher59:local
     ports:
-      - "8080:81"
+      - "8080:80"
     restart: always
