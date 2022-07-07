@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   web:
-    image: akucher59/flask_app:local
+    image: akucher59:local
     ports:
       - "8080:81"
     restart: always
